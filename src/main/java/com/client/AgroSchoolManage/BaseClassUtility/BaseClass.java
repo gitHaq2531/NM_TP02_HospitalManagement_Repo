@@ -18,7 +18,7 @@ import com.client.AgroSchoolManage.genericUtility.FileUtility;
 public class BaseClass
 {
 	public WebDriver driver=null;
-	static String browser=null;
+	public static String browser=null;
 	FileUtility futils=new FileUtility();
 	
 	@BeforeSuite
