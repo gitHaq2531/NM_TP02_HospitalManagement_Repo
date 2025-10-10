@@ -1,4 +1,4 @@
-package com.client.AgroSchoolManage.BaseClassUtility;
+package com.client.NM_HospitalManage.BaseClassUtility;
 
 import org.openqa.selenium.WebDriver;
 
