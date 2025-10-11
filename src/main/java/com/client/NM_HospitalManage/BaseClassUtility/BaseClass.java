@@ -19,7 +19,7 @@ public class BaseClass
 {
 	public WebDriver driver=null;
 	static String browser=null;
-	FileUtility futils=new FileUtility();
+	public FileUtility futils=new FileUtility();
 	
 	@BeforeSuite
 	public void beforeSuitConfigMethod()
