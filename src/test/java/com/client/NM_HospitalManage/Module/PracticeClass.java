@@ -7,4 +7,8 @@ public class PracticeClass {
 	public void method() {
 		System.out.println("hello , ar");
 	}
+	
+	public void method1() {
+		System.out.println("hello, sir");
+	}
 }
