@@ -1,4 +1,4 @@
-package com.client.AgroSchoolManage.webdriverutility;
+package com.client.NM_HospitalManage.webdriverutility;
 
 import java.time.Duration;
 

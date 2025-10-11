@@ -1,43 +1,44 @@
-package com.client.AgroSchoolManage.databaseutility;
+package com.client.NM_HospitalManage.databaseutility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import com.mysql.cj.jdbc.Driver;
 
 public class DatabaseUtility {
 	Connection conekt;
+
 	public void connectToDatabase() throws SQLException {
 		try {
 			Driver driver = new Driver();
 			DriverManager.registerDriver(driver);
-		 conekt =	DriverManager.getConnection("", "", "");
+			conekt = DriverManager.getConnection("", "", "");
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
-		
+
 	}
+
 	public ResultSet executeSelectQuery() throws SQLException {
-		ResultSet resultset=null;
+		ResultSet resultset = null;
 		try {
-		Statement state = conekt.createStatement();
-		 resultset = state.executeQuery("");
-		}catch (Exception e) {
+			Statement state = conekt.createStatement();
+			resultset = state.executeQuery("");
+		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
 		return resultset;
-}
+	}
+
 	public int executeNonSelectQuery() {
-		int result=0;
+		int result = 0;
 		try {
 			Statement state = conekt.createStatement();
-			 result = state.executeUpdate("");
+			result = state.executeUpdate("");
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -45,6 +46,7 @@ public class DatabaseUtility {
 		}
 		return result;
 	}
+
 	public void closeDatabaseConnection() throws SQLException {
 		try {
 			conekt.close();
@@ -52,7 +54,7 @@ public class DatabaseUtility {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }
