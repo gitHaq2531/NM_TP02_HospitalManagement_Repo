@@ -1,4 +1,4 @@
-package com.client.AgroSchoolManage.BaseClassUtility;
+package com.client.NM_HospitalManage.BaseClassUtility;
 
 import java.time.Duration;
 
@@ -13,12 +13,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.xml.XmlTest;
 
-import com.client.AgroSchoolManage.genericUtility.FileUtility;
+import com.client.NM_HospitalManage.genericUtility.FileUtility;
 
 public class BaseClass
 {
 	public WebDriver driver=null;
-	public static String browser=null;
+	static String browser=null;
 	FileUtility futils=new FileUtility();
 	
 	@BeforeSuite

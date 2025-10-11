@@ -1,4 +1,4 @@
-package com.client.AgroSchoolManage.genericUtility;
+package com.client.NM_HospitalManage.genericUtility;
 
 import java.io.FileInputStream;
 import java.util.Properties;
