@@ -7,8 +7,8 @@
         <methods>
           <include name="afterClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
-          <include name="afterMethodConfig"/>
           <include name="adminPagetest"/>
+          <include name="afterMethodConfig"/>
           <include name="beforeMethodConfig"/>
           <include name="beforeClassConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
