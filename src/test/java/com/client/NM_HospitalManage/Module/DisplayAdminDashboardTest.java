@@ -8,6 +8,7 @@ public class DisplayAdminDashboardTest extends AdminBaseClass{
 	public void adminPagetest() {
 		System.out.println("Hola Amigo");
 		System.out.println("Hello");
+		System.out.println("Hello1");
 		
 	}
 }
