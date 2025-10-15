@@ -1,9 +1,11 @@
 package com.client.NM_HospitalManage.webdriverutility;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -53,6 +55,20 @@ public class WebDriverUtility {
 	public void scrollToAnElement(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
 		action.scrollToElement(element);
+	}
+
+	public void switchToNewTab(WebDriver driver, String partialTitle) {
+		String currentWindow = driver.getWindowHandle();
+		Set<String> allwindows = driver.getWindowHandles();
+		for (String handle : allwindows) {
+			driver.switchTo().window(handle);
+			String actTitle = driver.getTitle();
+			if(actTitle.contains(partialTitle)) {
+				return;
+			}
+			driver.switchTo().window(currentWindow);
+			
+		}
 	}
 
 }
