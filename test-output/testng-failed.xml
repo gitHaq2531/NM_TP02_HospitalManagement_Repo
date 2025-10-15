@@ -8,9 +8,9 @@
           <include name="afterClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
           <include name="adminPagetest"/>
-          <include name="afterMethodConfig"/>
           <include name="beforeMethodConfig"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="afterMethodConfig"/>
           <include name="beforeSuitConfigMethod"/>
         </methods>
       </class> <!-- com.client.NM_HospitalManage.Module.DisplayAdminDashboardTest -->
