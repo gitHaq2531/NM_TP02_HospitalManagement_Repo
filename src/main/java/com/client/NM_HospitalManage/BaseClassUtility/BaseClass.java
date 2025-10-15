@@ -18,9 +18,9 @@ import com.client.NM_HospitalManage.genericUtility.FileUtility;
 public class BaseClass
 {
 	public WebDriver driver=null;
-	static String browser=null;
+	public static String browser=null;
 	public FileUtility futils=new FileUtility();
-	
+
 	@BeforeSuite
 	public void beforeSuitConfigMethod()
 	{
