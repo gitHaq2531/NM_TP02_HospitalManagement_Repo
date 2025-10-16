@@ -17,6 +17,12 @@ public class HmsPatientLoginPage {
 	private WebElement passwordEdit;
 	@FindBy(xpath = "//button[@name='submit']")
 	private WebElement loginEdit;
+	@FindBy(xpath = "//a[contains(text(),'Create an account')]")
+	private WebElement createAccountEdit;
+	
+	public WebElement getCreateAccountEdit() {
+		return createAccountEdit;
+	}
 	public WebElement getUsernameEdit() {
 		return userNameEdit;
 	}
