@@ -15,5 +15,7 @@ public class DisplayAdminDashboardTest extends AdminBaseClass{
 		System.out.println("Hello THERE");
 		System.out.println("akshay");
 		System.out.println("hello gitbash");	
+		System.out.println("hello there gitbash ");
+		System.out.println("hello i am using git bash");
 	}
 }
