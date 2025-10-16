@@ -65,8 +65,7 @@ public class WebDriverUtility {
 			if(actTitle.contains(partialTitle)) {
 				return;
 			}
-			driver.switchTo().window(currentWindow);
-			
+			driver.switchTo().window(currentWindow);	
 		}
 	}
 
