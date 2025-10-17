@@ -10,5 +10,6 @@ public class PracticeClass {
 	
 	public void method1() {
 		System.out.println("hello, sir");
+		System.out.println("feature update");
 	}
 }
